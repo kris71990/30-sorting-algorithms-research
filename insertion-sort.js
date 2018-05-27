@@ -8,8 +8,9 @@ Big O:
 
 const insertionSort = (arr) => {
   if (!(arr instanceof Array)) return undefined;
+  const l = arr.length;
 
-  for (let i = 1; i < arr.length; i++) {
+  for (let i = 1; i < l; i++) {
     const curr = arr[i];
     let prev = i - 1;
 

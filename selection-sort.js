@@ -8,10 +8,11 @@ Big O:
 
 const selectionSort = (arr) => {
   if (!(arr instanceof Array)) return undefined;
+  const l = arr.length;
 
-  for (let i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < l - 1; i++) {
     let index = i;
-    for (let j = i + 1; j < arr.length; j++) {
+    for (let j = i + 1; j < l; j++) {
       if (arr[j] < arr[index]) index = j;
     }
     const temp = arr[index];
