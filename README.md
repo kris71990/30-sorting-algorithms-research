@@ -1,20 +1,54 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+# Basic Sorting
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+**Author**: Kris Sakarias
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+**Version**: 1.0.0 
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+## Overview
+Three basic sorting algorithms are implemented in this repo
+  1. Insertion Sort
+  2. Selection Sort
+  3. Bubble Sort
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+### Algorithms
+**Insertion Sort** - Airity of 1 (Array)
+
+In an insertion sort, the algorithm iterates through the array input and compares values of a current index with previous indices until it finds the proper place to insert the value. As the iteration continues in place, this produces a growing sorted array. If the input is not an array, it returns undefined.
+
+*Complexity*: 
+```
+Time - O(n^2)
+Space - O(1)
+```
+
+**Selection Sort** - Airity of 1 (Array)
+
+In a selection sort, the algorithm creates two subarrays (sorted and unsorted). It searches the unsorted subarray to find the smallest value and then swaps it into the correct position in the sorted subarray. If input is not an array, it returns undefined.
+
+*Complexity*: 
+```
+Time - O(n^2)
+Space - O(1)
+```
+
+
+**Bubble Sort** - Airity of 1 (Array)
+
+The bubble sort iterates through an array and compares two adjacent values, which are then swapped if they are not in order. It continues through the array and subsequent iterations doing the same thing until no swaps are needed. If no input is given, it returns undefined.
+
+*Complexity*: 
+```
+Time - O(n^2)
+Space - O(1)
+```
+
+
+#### Documentation
+
+`git clone https://github.com/kris71990/30-sorting-algorithms-research.git`
+
+`node bubble-sort.js`
+
+`node selection-sort.js`
+
+`node insertion-sort.js`
