@@ -1,3 +1,5 @@
+'use strict';
+
 /* Insertion Sort
 Big O:
   T - O(n^2)
@@ -5,8 +7,10 @@ Big O:
 */
 
 const insertionSort = (arr) => {
+  if (!(arr instanceof Array)) return undefined;
+
   for (let i = 1; i < arr.length; i++) {
-    let curr = arr[i];
+    const curr = arr[i];
     let prev = i - 1;
 
     while (prev >= 0 && curr < arr[prev]) {
@@ -18,5 +22,5 @@ const insertionSort = (arr) => {
   return arr;
 };
 
-const test = insertionSort([8, 5, 1, 0, 7, 3, 9]);
-console.log(test); // [ 0, 1, 3, 5, 7, 8, 9 ]
+const test = insertionSort([1, 7, 10, 22, 3, 6, 1, 18, 12]);
+console.log(test); // [ 1, 1, 3, 6, 7, 10, 12, 18, 22 ]
